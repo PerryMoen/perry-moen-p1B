@@ -11,6 +11,8 @@ const contentfulConfig = {
 // CONTENTFUL_HOST in your environment config
 // the `host` property should map to `preview.contentful.com`
 // https://www.contentful.com/developers/docs/references/content-preview-api/#/reference/spaces/space/get-a-space/console/js
+
+//Activity 3 - this had us hide our keys, and then adjust the graphql to pull data from contentful and then showed us a way to add more content to gatsby
 if (process.env.CONTENTFUL_HOST) {
   contentfulConfig.host = process.env.CONTENTFUL_HOST
 }

@@ -2,6 +2,17 @@ import React from 'react'
 import Img from 'gatsby-image'
 
 import styles from './hero.module.css'
+import styled from 'styled-components'
+
+const H3 = styled.h3 `
+  margin: 0px;
+  color: yellow;
+`
+
+const P = styled.p `
+  margin:0px;
+  color: yellow;
+`
 
 export default ({ data }) => (
   <div className={styles.hero}>
@@ -11,9 +22,9 @@ export default ({ data }) => (
       fluid={data.heroImage.fluid}
     />
     <div className={styles.heroDetails}>
-      <h3 className={styles.heroHeadline}>{data.name}</h3>
-      <p className={styles.heroTitle}>{data.title}</p>
-      <p>{data.shortBio.shortBio}</p>
+      <H3>{data.name}</H3>
+      <P>{data.title}</P>
+      <P>{data.shortBio.shortBio}</P>
     </div>
   </div>
 )
